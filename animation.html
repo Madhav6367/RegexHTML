@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            background-color: yellow;
+            display: flex;
+            animation-name: Madhav;
+            border: 2px solid green;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;    
+        }
+        @keyframes Madhav{
+            from{
+                width: 200px;
+                border: solid green;
+                border-radius: 20px;
+                height: 200px;
+                background-color: yellow;
+            }
+            to{
+                width: 1200px;
+                border: dashed green;
+                border-radius: 200px;
+                height: 800px;
+                background-color: brown;
+            }
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 500px;
+                border-radius: 20px;
+                background-color: blue;
+            }
+            50%
+            {
+                top: 500px;
+                left: 500px;
+                border-radius: 50px;
+                background-color: green;
+            }
+            75%{
+                top: 500px;
+                left: 0px;
+                border-radius: 200px;
+                background-color: pink;
+
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                border-radius: 0px;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>    <div class="box"></div>
+    
+</body>
+</html>
